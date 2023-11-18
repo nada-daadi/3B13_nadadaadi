@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,500;1,600&display=swap');
+    *{
+        margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" sans-serif;
+    }
+
+body{
+    
+    min-height: 100vh;
+    background-color: #968295;
+
+}
+
+.header{
+    position: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+position: relative;
+font-size: 18px;
+color: #fff;
+font-weight: 500;
+text-decoration: none;
+margin-left: 40px;
+
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+
+
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.btn
+{
+    margin: 0;
+    padding: 0;
+justify-content: center;
+align-items: center;
+display: flex;
+
+font-size: 20px;
+font-weight: bold;
+background: pink;
+width: 160px;
+padding: 20px;
+border-radius: 20px;
+cursor: pointer;
+box-shadow: 0 0 10px  rgba(0, 0, 0, 0.1) ;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: box-shadow,transform;
+transition-property: box-shadow,transform;
+
+
+}
+.btn a{
+    font-family: "Roboto",sans-serif;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    
+
+}
+.btn.btn:hover, .btn:focus, .btn:active
+{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) ;
+    -webkit-transform: scale(1.100);
+    transform: scale(1.1);
+
+}
