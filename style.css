@@ -296,9 +296,14 @@ footer{
     display: inline-block;
     margin: 30px 0;
     border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 
 }
+.detal a:hover{
+    transform: translateY(-3px);
+}
 .images{
+    display: block;
     width: 45%;
     height: 50%;
     position: absolute;
@@ -413,4 +418,52 @@ h3{
     100%{
         width: 90%;
     }
+}
+.about-as{
+    padding: 80px 0px;
+
+}
+.container-about{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:0 20px ;
+
+}
+.row{
+    display: flex;
+    flex-wrap:wrap ;
+}
+
+.flex{
+    flex: 0 0 50%;
+    padding: 0 20px;
+    max-width: 50%;
+    
+}
+.container-about h2{
+    font-family: 'Roboto' sans-serif;
+    margin-bottom: 45px;
+    color: #fff;
+
+
+}
+.container-about p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+}
+.container-about img{
+    
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    
+}
+img{
+    width: 365px;
+    height: 365px;
+    border-radius: 10px  ;
+    border: 1px solid #ddd;
 }
