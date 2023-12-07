@@ -28,11 +28,11 @@
             <div class="main">
                 <div class="content">
                     <h2>Contact me</h2>
-                    <form action="#" method="post">
-                        <input type="text" name="name" placeholder="Enter Your Name">
-                        <input type="email" name="name" placeholder="Enter Your Email">
-                        <textarea name="message" placeholder="Your message"></textarea>
-                        <button type="submit" class="btne">Send <i class='fas fa-paper-plane'></i></button>
+                    <form >
+                        <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                        <input type="email"  id="email" placeholder="Enter Your Email">
+                        <textarea  id="message" placeholder="Your message"></textarea>
+                        <button type="button" onclick="sendEmail(); reset(); return false;" class="btne">Send <i class='fas fa-paper-plane'></i></button>
                     </form>
                 </div>
                 <div class="form-img">
@@ -55,5 +55,34 @@
             </div>
         </div>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+        let name = document.getElementById("name").value;
+          let email = document.getElementById("email").value;
+          let message = document.getElementById("message").value;
+        
+          let body = "Name:" + name + "<br/> Email:" + email  + "<br/> Messages:" + message;
+
+
+
+
+
+
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "ndaadi45@gmail.com",
+    Password : "A576A8605F54C63905AE096911D4460A7741",
+    To : 'ndaadi45@gmail.com',
+    From : "ndaadi45@gmail.com",
+    Subject : "New message from my contact portfolio",
+    Body : body
+}).then(
+  message => alert(message)
+);
+
+        }
+          
+    </script>
 </body>
 </html>
