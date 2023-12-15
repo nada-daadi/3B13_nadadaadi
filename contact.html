@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
    <link rel="stylesheet" href="style.css">
+   <script src="partie.js" defer></script>
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -63,12 +65,12 @@
           let message = document.getElementById("message").value;
         
           let body = "Name:" + name + "<br/> Email:" + email  + "<br/> Messages:" + message;
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
             Email.send({
     Host : "smtp.elasticemail.com",
     Username : "ndaadi45@gmail.com",
@@ -77,12 +79,14 @@
     From : "ndaadi45@gmail.com",
     Subject : "New message from my contact portfolio",
     Body : body
-}).then(
-  message => alert(message)
-);
-
+    }).then(
+    message => alert(message)
+    );
+    
         }
           
     </script>
+    <div class="loader"></div>
+    
 </body>
 </html>
